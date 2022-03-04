@@ -1,0 +1,44 @@
+
+
+void main() {
+  
+  print("***** Marksheet *****");
+  
+  int maths = 89;
+  int urdu = 90;
+  int physics = 77;
+  int english = 85;
+  int islamiat = 97;
+  
+  var subject = ("Maths : ${maths} \nUrdu : ${urdu} \nPhysics : ${physics} \nEnglish : ${english} \nIslamiat : ${islamiat}");
+  print(subject); 
+  
+  int total_marks = 500;
+  print("Total Marks = $total_marks");
+  
+  int obtain_marks = (maths + urdu + physics + english + islamiat); 
+  print("Obtain Marks = $obtain_marks");
+  
+  double result = (obtain_marks * 100 / total_marks);
+  print("Percentage = $result%");
+  
+  if(result >= 80){
+    print("Your Result Grade Is A+");
+  }
+  
+  else if(result > 70 && result <80){
+    print("Your Result Grade Is A");
+  }
+  
+  else if(result > 60 && result <70){
+    print("Your Result Grade Is B");
+  }
+  
+  else if(result > 50 && result <60){
+    print("Your Result Grade Is C");
+  }
+  else {
+    print("Fail!");
+  }
+}
+
